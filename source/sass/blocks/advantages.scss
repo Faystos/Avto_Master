@@ -1,0 +1,116 @@
+.advantages {
+  width: 100%;
+  padding: 60px 0;
+  position: relative;
+  background-image: url("../../img/bg/dvantages_bg.jpg");
+  background-position: center;
+  background-size: cover;
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba($color: #000000, $alpha: 0.7);
+  }
+
+  .advantages__wrap {
+    max-width: 1170px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+
+  .advantages__advantage {
+    width: 350px;
+    background-color: transparent;
+    display: flex;
+    margin: 0 20px 20px;
+    padding: 0 0 15px;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1;
+    transition:  all 0.5s;
+
+    &:hover {
+      // box-shadow: 0px 0px 19px 4px rgba(9, 9, 9, 0.6);
+
+      .advantages__advantage_icon {
+        background-color: #6c757d;
+        box-shadow: 0px 0px 30px 4px rgba(9, 9, 9, 1);
+        animation-duration: 0.5s;
+        animation-name: flicker;
+
+        &::before {
+          border-color: $auxiliary-color;
+        }
+      }
+    }
+  }
+
+  .advantages__advantage_icon {
+    width: 94px;
+    height: 94px;
+    border-radius: 50%;
+    background-color: $auxiliary-color;
+    position: relative;
+    margin-bottom: 20px;
+    transition:  all 0.5s;
+
+    // border: 15px solid rgba(108, 117, 125, 0.5);
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 35px;
+      height: 50px;
+      border: solid #81417B;
+      border-width: 0 8px 8px 0;
+      border-radius: 5px;
+      top: 45%;
+      left: 50%;
+      @include translate-rotate(-50%, 40deg);
+    }
+  }
+
+  .advantages__advantage_text {
+    color: $auxiliary-color;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.5;
+
+    h4 {
+      width: 76%;
+      font-family: $title-font;
+      font-size: 24px;
+      // line-height: 1.5;
+      margin-bottom: 10px;
+    }
+
+    p {
+      width: 90%;
+      font-family: $main-font-Light;
+      font-size: 18px;
+    }
+  }
+
+
+
+  @keyframes flicker {
+    0% {
+      border: 15px solid rgba(108, 117, 125, 0.3);
+    }
+    100% {
+      border: none;
+    }
+  }
+}
+
+
+
