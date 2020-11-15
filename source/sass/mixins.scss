@@ -28,16 +28,15 @@
 }
 
 @mixin animation-icon {
+  animation-duration: 0.5s;
+  animation-name: flicker;
 
   @keyframes flicker {
     0% {
-      width: 120px;
-      height: 120px;
+      border: 15px solid rgba(108, 117, 125, 0.3);
     }
     100% {
-      width: 94px;
-      height: 94px;
+      border: none;
     }
   }
-
 }
