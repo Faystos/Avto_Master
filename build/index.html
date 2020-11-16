@@ -3,7 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="Description" content="Автотехцентр СТО Авто Мастер 33 в Александрове">
+  <meta name="keywords" content="Автотехцентр, СТО, техосмотр в Александрове, СТО в Александрове, Авто-Мастер33, Авто-Мастер, Авто Мастер, АвтоМастер в Александрове, сервис в Александрове, авто мойка в Александрове">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="./fonts/roboto-condensed/roboto-condensed-bold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/roboto-condensed/roboto-condensed-light.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/roboto-condensed/roboto-condensed.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/roboto/roboto-medium.woff2" as="font" crossorigin="anonymous">
   <title>Авто-Мастер33</title>
 </head>
 <body>
@@ -46,12 +52,12 @@
         <p>Автотехцентр СТО</p>
       </div>
       <div class="header__block_communication">
-       <div class="header__address">
-         <a href="#location"><svg width="36" height="36"><use xlink:href="#icon_geolocation"></use></svg><p>Aрес <span>г. Александров ул.Красный переулок 20</span></p></a>
-       </div>
-       <div class="header__phone">
-         <a href="tel:+79048593076"><svg width="36" height="36"><use xlink:href="#icon_phone"></use></svg><p>Телефон<span>7(904)859-30-76</span></p></a>
-       </div>
+        <div class="header__address">
+          <a href="#location"><svg width="36" height="36"><use xlink:href="#icon_geolocation"></use></svg><p>Aрес <span>г. Александров ул.Красный переулок 20</span></p></a>
+        </div>
+        <div class="header__phone">
+          <a href="tel:+79048593076"><svg width="36" height="36"><use xlink:href="#icon_phone"></use></svg><p>Телефон<span>7(904)859-30-76</span></p></a>
+        </div>
       </div>
     </div>
   </header>
@@ -126,13 +132,25 @@
           <p>г. Александров ул.Красный переулок 20</p>
         </div>
         <div class="location__map" id="location">
-          <iframe src="https://yandex.ru/map-widget/v1/-/CCUAJJd4WC" width="1190" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+          <iframe src="https://yandex.ru/map-widget/v1/-/CCUAJJd4WC" width="1190" height="400" style="position:relative;"></iframe>
         </div>
         <div class="location__block_img">
-          <img src="./img/img/location/location_1.jpg" alt="картинка с изображением пути до автоцентра" width="295" height="199">
-          <img src="./img/img/location/location_2.jpg" alt="картинка с изображением пути до автоцентра" width="295" height="199">
-          <img src="./img/img/location/location_3.jpg" alt="картинка с изображением пути до автоцентра" width="295" height="199">
-          <img src="./img/img/location/location_4.jpg" alt="картинка с изображением пути до автоцентра" width="295" height="199">
+          <picture>
+            <source type="image/webp" srcset="./img/img/location/location_1.webp 1x">
+            <img src="./img/img/location/location_1.jpg" alt="картинка с изображением пути до автоцентра" width="295" height="199">
+          </picture>
+          <picture>
+            <source type="image/webp" srcset="./img/img/location/location_2.webp 1x">
+            <img src="./img/img/location/location_2.jpg" alt="картинка с изображением пути до автоцентра" width="295" height="199">
+          </picture>
+          <picture>
+            <source type="image/webp" srcset="./img/img/location/location_3.webp 1x">
+            <img src="./img/img/location/location_3.jpg" alt="картинка с изображением пути до автоцентра" width="295" height="199">
+          </picture>
+          <picture>
+            <source type="image/webp" srcset="./img/img/location/location_4.webp 1x">
+            <img src="./img/img/location/location_4.jpg" alt="картинка с изображением пути до автоцентра" width="295" height="199">
+          </picture>
         </div>
       </div>
     </section>
@@ -140,7 +158,7 @@
   <footer class="footer">
     <div class="footer__wrap">
       <div class="footer__phone">
-       <h3>Звоните:</h3>
+        <h3>Звоните:</h3>
         <div class="footer__block_phone">
           <a href="tel:+74924466161">+7(49244) 6-61-61</a>
           <a href="tel:+79048593076">+7(904) 859-30-76</a>

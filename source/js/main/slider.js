@@ -36,7 +36,7 @@
       if ( i === 1) {
         this.sliderIndex++
         if (this.sliderIndex > this.sliderItemArr.length - 1) this.sliderIndex = 0;
-       }
+      }
     }
 
     renderSliderItem = sliderIndex => {
@@ -49,5 +49,3 @@
 
   new Slider('description__slider');
 })();
-
-

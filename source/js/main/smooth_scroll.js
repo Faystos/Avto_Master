@@ -38,7 +38,3 @@
 
   new Scrolling();
 })();
-
-
-
-

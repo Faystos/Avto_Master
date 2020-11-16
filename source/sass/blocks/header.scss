@@ -11,21 +11,22 @@
   }
 
   .header__logo_link {
-   a {
-     font-family: $title-bold-font;
-     font-size: 32px;
-     margin-bottom: 5px;
-   }
+    a {
+      font-family: $title-bold-font;
+      font-size: 32px;
+      margin-bottom: 5px;
+    }
 
-   p {
-    font-family: $main-font;
-    font-size: 20px;
-   }
+    p {
+      font-family: $main-font;
+      font-size: 20px;
+    }
   }
 
   .header__block_communication {
     display: flex;
   }
+
   .header__address,
   .header__phone {
     display: flex;
@@ -39,7 +40,7 @@
 
     a {
       display: flex;
-      font-family:  $title-bold-font;
+      font-family: $title-bold-font;
       font-size: 16px;
       margin-left: 25px;
     }
@@ -66,14 +67,14 @@
     }
 
     .header__logo_link {
-     a {
-       font-size: 28px;
-     }
+      a {
+        font-size: 28px;
+      }
 
-     p {
-       font-size: 16px;
-       margin-top: 5px;
-     }
+      p {
+        font-size: 16px;
+        margin-top: 5px;
+      }
     }
 
     .header__address,
@@ -82,7 +83,6 @@
         display: none;
       }
     }
-
   }
 
   @media (max-width: $table-width) {
@@ -105,11 +105,12 @@
       p {
         display: none;
       }
-     }
+    }
 
     .header__address,
     .header__phone {
       margin-left: 15px;
+
       svg {
         width: 30px;
         height: 30px;
@@ -120,6 +121,5 @@
         margin: 0;
       }
     }
-
   }
 }

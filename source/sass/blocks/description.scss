@@ -28,9 +28,8 @@
     @include opacity-link;
     @include hide-font;
     width: 52px;
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0, 0, 0, 0.3);
     position: relative;
-
 
     &::before {
       content: "";
@@ -120,11 +119,10 @@
     }
 
     .description__slider_item {
-
       p {
         max-width: 650px;
         font-size: 1rem;
-       }
+      }
     }
   }
 
