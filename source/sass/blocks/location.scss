@@ -1,10 +1,12 @@
 .location {
   width: 100%;
-  margin: 60px 0;
+  padding: 60px 0;
 
   .location__wrap {
     max-width: 1190px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
   }
 
   .location__title {
@@ -13,6 +15,12 @@
     h3 {
       font-family: $title-font;
       font-size: 27px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-family: $main-font-Light;
+      font-size: 18px;
     }
   }
 
@@ -29,21 +37,29 @@
   @media (max-width: $desktop-width) {
 
     .location__wrap {
-      max-width: 600px;
+      width: 100%;
     }
 
     .location__title {
       text-align: center;
+      order: 1;
+    }
+
+    .location__block_img {
+      max-width: 600px;
+      margin: 0 auto;
+      order: 2;
     }
 
     .location__map {
+      width: 100%;
+      order: 3;
       iframe {
         width: 100%;
       }
     }
 
     .location__block_img {
-
       img {
         margin-bottom: 10px;
       }
@@ -51,9 +67,20 @@
   }
 
   @media (max-width: $table-width) {
+    padding: 30px 0;
 
     .location__wrap {
+      width: 100%;
+    }
+
+    .location__title {
       max-width: 295px;
+      margin: 0 auto 30px;
+    }
+
+    .location__block_img {
+      max-width: 295px;
+      margin-bottom: 30px;
     }
   }
 }
