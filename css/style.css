@@ -364,12 +364,43 @@ a {
       left: 0;
       -webkit-transition: left 0.5s;
       transition: left 0.5s; }
-    .description .description__slider_item.item_1 {
-      background-image: url("../img/bg/descr_bg_1.jpg"); }
-    .description .description__slider_item.item_2 {
-      background-image: url("../img/bg/descr_bg_2.jpg"); }
-    .description .description__slider_item.item_3 {
-      background-image: url("../img/bg/descr_bg_3.jpg"); }
+    .description .description__slider_item.item_checkup {
+      background-image: url("../img/bg/descr_bg_checkup.jpg"); }
+    .description .description__slider_item.item_checkup_all {
+      background-image: url("../img/bg/descr_bg_checkup_all.jpg"); }
+    .description .description__slider_item.item_maintenance {
+      background-image: url("../img/bg/descr_bg_maintenance.jpg"); }
+    .description .description__slider_item.item_washing {
+      background-image: url("../img/bg/descr_bg_washing.jpg"); }
+    .description .description__slider_item.item_tire_service {
+      background-image: url("../img/bg/descr_bg_tire_service.jpg"); }
+    .description .description__slider_item.item_wheel_alignment {
+      background-image: url("../img/bg/descr_bg_wheel_alignment.jpg"); }
+    .description .description__slider_item.item_engine {
+      background-image: url("../img/bg/descr_bg_engine.jpg"); }
+    .description .description__slider_item--special_offer button {
+      padding: 0;
+      border: none;
+      font-family: inherit;
+      color: inherit;
+      background-color: transparent;
+      cursor: pointer;
+      outline: none;
+      width: 164px;
+      min-height: 46px;
+      background-color: #81417b;
+      font-family: "Roboto", "Aria", sans-serif;
+      color: #ffffff;
+      font-size: 18px;
+      border-radius: 23px;
+      margin-top: 35px;
+      z-index: 11;
+      -webkit-transition: all 0.5s;
+      transition: all 0.5s; }
+      .description .description__slider_item--special_offer button:hover {
+        background-color: #6f42c1; }
+      .description .description__slider_item--special_offer button:active {
+        opacity: 0.7; }
   .description .description__slider_overlay {
     position: absolute;
     width: 100%;
@@ -382,6 +413,8 @@ a {
     .description .description__slider_control_item {
       width: 45px;
       height: 45px; }
+    .description .description__slider_item--special_offer button {
+      display: none; }
     .description .description__slider_item p {
       max-width: 650px;
       font-size: 1rem; } }
@@ -695,3 +728,81 @@ a {
       width: 100%;
       text-align: center;
       padding: 20px; } }
+
+.engine {
+  display: none;
+  color: #000000; }
+  .engine--open {
+    display: block; }
+  .engine--overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 999; }
+  .engine .engine__modal {
+    width: 70%;
+    height: 80%;
+    overflow-y: auto;
+    margin: 100px auto 0;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 30px 10px;
+    position: relative; }
+  .engine button {
+    padding: 0;
+    border: none;
+    font-family: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    font-size: 0;
+    position: absolute;
+    top: 0;
+    right: 0; }
+    .engine button svg {
+      fill: #000000;
+      -webkit-transition: all 0.5s;
+      transition: all 0.5s; }
+    .engine button:hover svg {
+      fill: #dc3545; }
+    .engine button:active {
+      opacity: 0.7; }
+  .engine h3,
+  .engine h4 {
+    font-family: "Roboto Condensed Bold", "Aria", sans-serif;
+    font-size: 28px;
+    margin-top: 15px; }
+  .engine h4 {
+    font-size: 24px; }
+  .engine p {
+    width: 81%;
+    font-family: "Roboto", "Aria", sans-serif;
+    font-size: 20px;
+    margin: 15px auto 0;
+    line-height: 1.5; }
+  .engine ul {
+    width: 80%;
+    margin: 25px auto 0;
+    text-align: left; }
+  .engine li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 10px; }
+  .engine svg {
+    fill: #28a745;
+    margin-right: 10px; }
+  .engine span {
+    font-family: "Roboto", "Aria", sans-serif;
+    font-size: 18px; }
+  .engine img {
+    width: 95%;
+    height: auto;
+    margin-top: 25px; }
