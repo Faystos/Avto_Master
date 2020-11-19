@@ -500,7 +500,7 @@ a {
   width: 100%;
   padding: 60px 0;
   position: relative;
-  background-image: url("../../img/bg/dvantages_bg.jpg");
+  background-image: url("../img/bg/advantages_bg.jpg");
   background-position: center;
   background-size: cover; }
   .advantages::before {
