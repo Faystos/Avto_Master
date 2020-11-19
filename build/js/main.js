@@ -9,30 +9,91 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 (function () {
+  var Popup = /*#__PURE__*/function () {
+    function Popup(btnOpen, blockModal) {
+      var _this = this;
+
+      _classCallCheck(this, Popup);
+
+      _defineProperty(this, "openModal", function () {
+        _this.blockModal.classList.add("".concat(_this.classModal, "--open"));
+
+        _this.body.style.overflow = 'hidden';
+        document.addEventListener('keydown', _this.closeModalBtnEsc);
+      });
+
+      _defineProperty(this, "closeModal", function (evt) {
+        _this.blockModal.classList.remove("".concat(_this.classModal, "--open"));
+
+        _this.body.style.overflow = 'auto';
+      });
+
+      _defineProperty(this, "handlerModal", function (evt) {
+        evt.stopPropagation();
+        if (evt.target.parentElement === _this.btnClose) _this.closeModal();
+      });
+
+      _defineProperty(this, "closeModalBtnEsc", function (evt) {
+        if (evt.keyCode === 27) {
+          _this.closeModal();
+
+          document.removeEventListener('keydown', _this.closeModalBtnEsc);
+        } else {
+          return;
+        }
+      });
+
+      this.btnOpen = document.querySelector(".".concat(btnOpen));
+      this.blockModal = document.querySelector(".".concat(blockModal));
+      this.modal = this.blockModal.querySelector(".".concat(blockModal, "__modal"));
+      this.btnClose = this.modal.querySelector(".".concat(blockModal, "__close"));
+      this.classModal = blockModal;
+      this.body = document.querySelector('body');
+      this.modalInit();
+    }
+
+    _createClass(Popup, [{
+      key: "modalInit",
+      value: function modalInit() {
+        this.btnOpen.addEventListener('click', this.openModal);
+        this.blockModal.addEventListener('click', this.closeModal);
+        this.modal.addEventListener('click', this.handlerModal);
+      }
+    }]);
+
+    return Popup;
+  }();
+
+  new Popup('description__btn_engine_detailed', 'engine');
+})();
+
+'use strict';
+
+(function () {
   var Slider = /*#__PURE__*/function () {
     function Slider(blockSlider) {
-      var _this = this;
+      var _this2 = this;
 
       _classCallCheck(this, Slider);
 
       _defineProperty(this, "handlerBtnPrev", function (el, i) {
         if (i === 0) {
-          _this.sliderIndex--;
-          if (_this.sliderIndex < 0) _this.sliderIndex = _this.sliderItemArr.length - 1;
+          _this2.sliderIndex--;
+          if (_this2.sliderIndex < 0) _this2.sliderIndex = _this2.sliderItemArr.length - 1;
         }
       });
 
       _defineProperty(this, "handlerBtnNext", function (el, i) {
         if (i === 1) {
-          _this.sliderIndex++;
-          if (_this.sliderIndex > _this.sliderItemArr.length - 1) _this.sliderIndex = 0;
+          _this2.sliderIndex++;
+          if (_this2.sliderIndex > _this2.sliderItemArr.length - 1) _this2.sliderIndex = 0;
         }
       });
 
       _defineProperty(this, "renderSliderItem", function (sliderIndex) {
-        _this.sliderItemArr.forEach(function (el, index) {
-          el.classList.remove("".concat(_this.stringClassSlider, "_item--active"));
-          if (index === sliderIndex) el.classList.add("".concat(_this.stringClassSlider, "_item--active"));
+        _this2.sliderItemArr.forEach(function (el, index) {
+          el.classList.remove("".concat(_this2.stringClassSlider, "_item--active"));
+          if (index === sliderIndex) el.classList.add("".concat(_this2.stringClassSlider, "_item--active"));
         });
       });
 
@@ -51,15 +112,15 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     _createClass(Slider, [{
       key: "initSlider",
       value: function initSlider() {
-        var _this2 = this;
+        var _this3 = this;
 
         this.sliderControlArr.forEach(function (el, i, arr) {
           el.addEventListener('click', function (evt) {
-            _this2.handlerBtnPrev(el, i);
+            _this3.handlerBtnPrev(el, i);
 
-            _this2.handlerBtnNext(el, i);
+            _this3.handlerBtnNext(el, i);
 
-            _this2.renderSliderItem(_this2.sliderIndex);
+            _this3.renderSliderItem(_this3.sliderIndex);
           });
         });
       }
@@ -87,12 +148,12 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     _createClass(Scrolling, [{
       key: "scrollInit",
       value: function scrollInit() {
-        var _this3 = this;
+        var _this4 = this;
 
         this.linkNavArr.forEach(function (el) {
           el.addEventListener('click', function (evt) {
             evt.preventDefault();
-            var speed = _this3.speed;
+            var speed = _this4.speed;
             var w = window.pageYOffset;
             var hash = el.href.replace(/[^#]*(.*)/, '$1');
             var t = document.querySelector(hash).getBoundingClientRect().top;

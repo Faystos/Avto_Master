@@ -89,16 +89,57 @@
       transition: left 0.5s;
     }
 
-    &.item_1 {
-      background-image: url("../img/bg/descr_bg_1.jpg");
+    &.item_checkup {
+      background-image: url("../img/bg/descr_bg_checkup.jpg");
     }
 
-    &.item_2 {
-      background-image: url("../img/bg/descr_bg_2.jpg");
+    &.item_checkup_all {
+      background-image: url("../img/bg/descr_bg_checkup_all.jpg");
     }
 
-    &.item_3 {
-      background-image: url("../img/bg/descr_bg_3.jpg");
+    &.item_maintenance {
+      background-image: url("../img/bg/descr_bg_maintenance.jpg");
+    }
+
+    &.item_washing {
+      background-image: url("../img/bg/descr_bg_washing.jpg");
+    }
+
+    &.item_tire_service {
+      background-image: url("../img/bg/descr_bg_tire_service.jpg");
+    }
+
+    &.item_wheel_alignment {
+      background-image: url("../img/bg/descr_bg_wheel_alignment.jpg");
+    }
+
+    &.item_engine {
+      background-image: url("../img/bg/descr_bg_engine.jpg");
+    }
+
+
+    &--special_offer {
+      button {
+        @include button-reset;
+        width: 164px;
+        min-height: 46px;
+        background-color: #81417b;
+        font-family: $main-font;
+        color: $auxiliary-color;
+        font-size: 18px;
+        border-radius: 23px;
+        margin-top: 35px;
+        z-index: 11;
+        transition: all 0.5s;
+
+        &:hover {
+          background-color: #6f42c1;
+        }
+
+        &:active {
+          opacity: 0.7;
+        }
+      }
     }
   }
 
@@ -119,6 +160,12 @@
     }
 
     .description__slider_item {
+      &--special_offer {
+        button {
+          display: none;
+        }
+      }
+
       p {
         max-width: 650px;
         font-size: 1rem;

@@ -43,6 +43,26 @@
           C28.039,146.4,24.139,124.3,25.739,104.2z"></path>
       </g>
       </symbol>
+
+      <symbol id="icon_checked" viewBox="0 0 512 512">
+        <g>
+          <path d="M496.395,61.77c-20.808-20.807-54.666-20.807-75.474,0l-197.11,197.108l-69.874-69.875
+            c-20.808-20.807-54.666-20.807-75.474,0c-20.808,20.808-20.808,54.666,0,75.474l120.341,120.341
+            c6.895,6.895,15.951,10.342,25.007,10.342c9.057,0,18.113-3.447,25.008-10.342l247.576-247.576
+            C517.201,116.435,517.201,82.579,496.395,61.77z M477.049,117.897L229.472,365.475c-3.12,3.12-8.2,3.12-11.32,0L97.811,245.133
+            c-10.141-10.141-10.141-26.64,0-36.781c5.07-5.072,11.729-7.606,18.39-7.606s13.321,2.535,18.39,7.606l71.882,71.882
+            c4.632,4.631,10.791,7.181,17.339,7.181c6.551,0,12.71-2.551,17.341-7.182L440.268,81.116c10.138-10.141,26.64-10.141,36.781,0
+            C487.189,91.257,487.189,107.756,477.049,117.897z"></path>
+        </g>
+      </symbol>
+
+      <symbol id="icon_cancel" viewBox="0 0 490.4 490.4">
+        <g>
+          <path d="M180.3,310.1c2.4,2.4,5.5,3.6,8.7,3.6s6.3-1.2,8.7-3.6l47.6-47.6l47.6,47.6c2.4,2.4,5.5,3.6,8.7,3.6s6.3-1.2,8.7-3.6
+            c4.8-4.8,4.8-12.5,0-17.3l-47.8-47.6l47.6-47.6c4.8-4.8,4.8-12.5,0-17.3s-12.5-4.8-17.3,0l-47.6,47.6l-47.6-47.6
+            c-4.8-4.8-12.5-4.8-17.3,0s-4.8,12.5,0,17.3l47.6,47.6l-47.6,47.6C175.5,297.6,175.5,305.3,180.3,310.1z"></path>
+        </g>
+      </symbol>
   </svg>
 
   <header class="header">
@@ -56,7 +76,7 @@
           <a href="#location"><svg width="36" height="36"><use xlink:href="#icon_geolocation"></use></svg><p>Aрес <span>г. Александров ул.Красный переулок 20</span></p></a>
         </div>
         <div class="header__phone">
-          <a href="tel:+79048593076"><svg width="36" height="36"><use xlink:href="#icon_phone"></use></svg><p>Телефон<span>7(904)859-30-76</span></p></a>
+          <a href="tel:+74924466161"><svg width="36" height="36"><use xlink:href="#icon_phone"></use></svg><p>Телефон<span>+7(49244) 6-61-61</span></p></a>
         </div>
       </div>
     </div>
@@ -69,21 +89,49 @@
             <button class="description__slider_control_item prev">Назад</button>
             <button class="description__slider_control_item next">Вперёд</button>
           </div>
-          <div class="description__slider_item description__slider_item--active item_1">
+          <div class="description__slider_item item_checkup">
             <h2>Проводим техосмотр максимально быстро</h2>
             <p>Благодаря опытным сотрудникам и новейшему оборудованию техосмотр занимает гораздо меньше времени.</p>
             <div class="description__slider_overlay"></div>
           </div>
-          <div class="description__slider_item item_2">
+          <div class="description__slider_item item_checkup_all">
             <h2>Техосмотр автомобилей всех типов</h2>
-            <p>Мы проводим техосмотр легковых и грузовых автомобилей всех типов, прицепов, полуприцепов и мототранспортных средств.</p>
+            <p>Мы проводим техосмотр легковых и грузовых автомобилей до 3,5 тон.</p>
             <div class="description__slider_overlay"></div>
           </div>
-          <div class="description__slider_item item_3">
+          <div class="description__slider_item item_maintenance">
             <h2>Полный спектр услуг С.Т.О.</h2>
             <p>Мы предлагаем полный спектр услуг, - от осмотра, до ремонта.</p>
             <div class="description__slider_overlay"></div>
           </div>
+
+          <div class="description__slider_item item_washing">
+            <h2>Мойка автомобилей</h2>
+            <p>Быстрая и доступная мойка автомобиля на современном и качественном оборудовании,
+              с применением только профессиональной химии.</p>
+            <div class="description__slider_overlay"></div>
+          </div>
+
+          <div class="description__slider_item item_tire_service">
+            <h2>Шиномонтаж</h2>
+            <p>Мы предлагаем комплексные услуги шиномонтажа.</p>
+            <div class="description__slider_overlay"></div>
+          </div>
+
+          <div class="description__slider_item item_wheel_alignment">
+            <h2>Сход развал</h2>
+            <p>У нас Вы сможете сделать качественный "СХОД-РАЗВАЛ" с использованием самого современного оборудования</p>
+            <div class="description__slider_overlay"></div>
+          </div>
+
+          <div class="description__slider_item description__slider_item--active description__slider_item--special_offer item_engine">
+            <h2>Чистка двигателя водородом</h2>
+            <p>Мы восстановим изначальные установки двигателя за 1 час</p>
+            <button type="button" class="description__btn_engine_detailed">Подробнее</button>
+            <div class="description__slider_overlay"></div>
+          </div>
+
+
         </div>
       </div>
     </section>
@@ -91,9 +139,8 @@
       <div class="info__wrap">
         <div class="info__block_text">
           <h3>О компании</h3>
-          <p>Текст о компании – это идеальная возможность для отстройки от конкурентов. Нужно оперировать фактами. Пусть их будет немного, но именно они будут демонстрировать уникальность вашей компании.</p>
-          <p>Шаблон написания текста о компании:
-            чем&nbsp;занимаемся;&nbsp;что у нас получается лучше всего; примеры наших работ; в чём отличие компании; наша команда в лицах; наша компания в цифрах; что о нас говорят клиенты; какие гарантии мы даём.</p>
+          <p>Техцентр “Автомастер” компания с 16-летним опытом работы по ремонту и техническому обслуживанию легковых авто, коммерческого транспорта и легких грузовиков до 3,5т.</p>
+          <p>Мы предоставляем полный спектр услуг: мойка, шиномонтаж, сход-развал, все виды слесарных работ, гос. тех. осмотр.</p>
         </div>
         <div class="info__block_img"></div>
       </div>
@@ -120,7 +167,7 @@
           <div class="advantages__advantage_icon"></div>
           <div class="advantages__advantage_text">
             <h4>Квалифицированные сотрудники</h4>
-            <p>В нашем штате работают специалисты имеющие более 10 лет опыта работы</p>
+            <p>В нашем штате работают специалисты имеющие более 15 лет опыта работы</p>
           </div>
         </div>
       </div>
@@ -154,6 +201,44 @@
         </div>
       </div>
     </section>
+
+    <div class="engine engine--overlay">
+      <div class="engine__modal">
+        <button class="engine__close">закрыть<svg width="35" height="35"><use xlink:href="#icon_cancel"></use></svg></button>
+        <h3>Очистка двигателя водородом</h3>
+        <p>Эффективный и не дорогой способ проведения внутренней безразборной очистки двигателя, выхлопной системы, катализатора и сажевого фильтра.</p>
+        <picture>
+          <source type="image/webp" srcset="./img/img/engine/img_h2.webp 1x">
+          <img src="./img/img/engine/img_h2.jpg" alt="изображение чистки двигателя водородом" width="700" height="500">
+        </picture>
+        <h4>Что чистит водород в двигателе?</h4>
+        <ul>
+          <li><svg width="20" height="20"><use xlink:href="#icon_checked"></use></svg><span>Поршни, поршневые кольца;</span> </li>
+          <li><svg width="20" height="20"><use xlink:href="#icon_checked"></use></svg><span>Выпускные и впускные клапаны;</span></li>
+          <li><svg width="20" height="20"><use xlink:href="#icon_checked"></use></svg><span>Свечи зажигания;</span></li>
+          <li><svg width="20" height="20"><use xlink:href="#icon_checked"></use></svg><span>Форсунки;</span></li>
+          <li><svg width="20" height="20"><use xlink:href="#icon_checked"></use></svg><span>Клапан EGR;</span></li>
+          <li><svg width="20" height="20"><use xlink:href="#icon_checked"></use></svg><span>Турбокомпрессор;</span></li>
+          <li><svg width="20" height="20"><use xlink:href="#icon_checked"></use></svg><span>Дроссельная заслонка;</span></li>
+          <li><svg width="20" height="20"><use xlink:href="#icon_checked"></use></svg><span>Выпускной коллектор;</span></li>
+          <li><svg width="20" height="20"><use xlink:href="#icon_checked"></use></svg><span>Катализатор, cажевый фильтр;</span></li>
+          <li><svg width="20" height="20"><use xlink:href="#icon_checked"></use></svg><span>Лямбда-зонд и другие компоненты ДВС;</span></li>
+        </ul>
+        <picture>
+          <source type="image/webp" srcset="./img/img/engine/img_descr.webp 1x">
+          <img src="./img/img/engine/img_descr.jpg" alt="изображение чистки двигателя водородом" width="700" height="500">
+        </picture>
+        <h4>Результат:</h4>
+        <ul>
+          <li><svg width="20" height="20"><use xlink:href="#icon_checked"></use></svg><span>Удаление углеродистых отложений;</span></li>
+          <li><svg width="20" height="20"><use xlink:href="#icon_checked"></use></svg><span>Восстановление мощности двигателя;</span></li>
+          <li><svg width="20" height="20"><use xlink:href="#icon_checked"></use></svg><span>Снижение расхода топлива и масла;</span></li>
+          <li><svg width="20" height="20"><use xlink:href="#icon_checked"></use></svg><span>Сокращение выбросов HC, CO и CO2;</span></li>
+          <li><svg width="20" height="20"><use xlink:href="#icon_checked"></use></svg><span>Раскоксовка поршневой группы;</span></li>
+        </ul>
+        <p>Рекомендуем проводить процедуру каждые 20-30 тысяч километров</p>
+      </div>
+    </div>
   </main>
   <footer class="footer">
     <div class="footer__wrap">
@@ -162,6 +247,7 @@
         <div class="footer__block_phone">
           <a href="tel:+74924466161">+7(49244) 6-61-61</a>
           <a href="tel:+79048593076">+7(904) 859-30-76</a>
+          <a href="tel:+79005856339">+7(900) 585-63-39</a>
         </div>
       </div>
       <div class="footer__schedule">
