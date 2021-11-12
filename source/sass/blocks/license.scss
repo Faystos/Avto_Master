@@ -1,0 +1,58 @@
+.license {
+  width: 40%;
+  padding: 40px 0;
+  margin: 10px auto;
+  // background-color: darkblue;
+
+  .license__wrap {
+    max-width: 1190px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  h3 {
+    text-align: center;
+    font-family: $title-bold-font;
+    font-size: 29px;
+    margin-bottom: 25px;
+  }
+
+  .license__image {
+    img {
+      display: block;
+      width: 500px;
+      height: 370px;
+      margin: 0 auto;
+      cursor: pointer;
+    }
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .license {
+    width: 100%;
+    margin: 0 auto;
+
+    .license__image {
+      width: 100%;
+      padding: 0 10px;
+
+      img {
+        width: 65%;
+      }
+    }
+  }
+}
+
+@media (max-width: $table-width) {
+  .license {
+    .license__image {
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+}

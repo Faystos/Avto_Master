@@ -1,0 +1,10 @@
+.double_block {
+  display: flex;
+}
+
+@media (max-width: $desktop-width) {
+  .double_block {
+    flex-direction: column;
+  }
+
+}
