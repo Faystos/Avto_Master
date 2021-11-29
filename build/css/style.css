@@ -728,41 +728,42 @@ a {
             justify-content: center;
     margin-top: 20px; }
   .feedback .feedback__block_input input,
-  .feedback .feedback__block_input textarea {
+  .feedback .feedback__block_input textarea#description {
     font-family: "Roboto", "Aria", sans-serif;
     background-color: transparent;
     width: 510px;
     height: 47px;
     border: 1px solid #ffffff;
+    color: #ffffff;
     border-radius: 5px;
     margin-bottom: 15px;
     padding: 10px 18px; }
     .feedback .feedback__block_input input::-webkit-input-placeholder,
-    .feedback .feedback__block_input textarea::-webkit-input-placeholder {
+    .feedback .feedback__block_input textarea#description::-webkit-input-placeholder {
       font-size: 15px;
       letter-spacing: 1.5px;
       color: #ffffff; }
     .feedback .feedback__block_input input::-moz-placeholder,
-    .feedback .feedback__block_input textarea::-moz-placeholder {
+    .feedback .feedback__block_input textarea#description::-moz-placeholder {
       font-size: 15px;
       letter-spacing: 1.5px;
       color: #ffffff; }
     .feedback .feedback__block_input input:-ms-input-placeholder,
-    .feedback .feedback__block_input textarea:-ms-input-placeholder {
+    .feedback .feedback__block_input textarea#description:-ms-input-placeholder {
       font-size: 15px;
       letter-spacing: 1.5px;
       color: #ffffff; }
     .feedback .feedback__block_input input::-ms-input-placeholder,
-    .feedback .feedback__block_input textarea::-ms-input-placeholder {
+    .feedback .feedback__block_input textarea#description::-ms-input-placeholder {
       font-size: 15px;
       letter-spacing: 1.5px;
       color: #ffffff; }
     .feedback .feedback__block_input input::placeholder,
-    .feedback .feedback__block_input textarea::placeholder {
+    .feedback .feedback__block_input textarea#description::placeholder {
       font-size: 15px;
       letter-spacing: 1.5px;
       color: #ffffff; }
-  .feedback .feedback__block_input textarea {
+  .feedback .feedback__block_input textarea#description {
     height: 110px;
     margin-bottom: 12px; }
   .feedback .feedback__block_control button {
@@ -840,7 +841,7 @@ a {
 
 .footer {
   width: 100%;
-  padding: 80px 0;
+  padding: 40px 0;
   background-color: #333333;
   color: #888888; }
   .footer .footer__wrap {
@@ -848,20 +849,29 @@ a {
     margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
   .footer .footer__phone,
-  .footer .footer__schedule {
+  .footer .footer__schedule,
+  .footer .footer__about {
     width: 50%;
     font-size: 20px;
     padding: 20px 20px 20px 170px; }
     .footer .footer__phone h3,
-    .footer .footer__schedule h3 {
+    .footer .footer__schedule h3,
+    .footer .footer__about h3 {
       font-family: "Roboto Condensed", "Aria", sans-serif;
       margin-bottom: 10px; }
     .footer .footer__phone a,
     .footer .footer__phone p,
     .footer .footer__schedule a,
-    .footer .footer__schedule p {
+    .footer .footer__schedule p,
+    .footer .footer__about a,
+    .footer .footer__about p {
       font-family: "Roboto", "Aria", sans-serif;
       margin-bottom: 5px; }
   .footer .footer__block_phone {
@@ -874,7 +884,8 @@ a {
             flex-direction: column; }
   @media (max-width: 1199px) {
     .footer .footer__phone,
-    .footer .footer__schedule {
+    .footer .footer__schedule,
+    .footer .footer__about {
       padding-left: 120px; } }
   @media (max-width: 767px) {
     .footer .footer__wrap {
@@ -886,7 +897,8 @@ a {
           -ms-flex-align: center;
               align-items: center; }
     .footer .footer__phone,
-    .footer .footer__schedule {
+    .footer .footer__schedule,
+    .footer .footer__about {
       width: 100%;
       text-align: center;
       padding: 20px; } }

@@ -1,6 +1,6 @@
 .footer {
   width: 100%;
-  padding: 80px 0;
+  padding: 40px 0;
   background-color: #333333;
   color: #888888;
 
@@ -8,10 +8,13 @@
     max-width: 1180px;
     margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .footer__phone,
-  .footer__schedule {
+  .footer__schedule,
+  .footer__about {
     width: 50%;
     font-size: 20px;
     padding: 20px 20px 20px 170px;
@@ -35,7 +38,8 @@
 
   @media (max-width: $desktop-width) {
     .footer__phone,
-    .footer__schedule {
+    .footer__schedule,
+    .footer__about {
       padding-left: 120px;
     }
   }
@@ -47,7 +51,8 @@
     }
 
     .footer__phone,
-    .footer__schedule {
+    .footer__schedule,
+    .footer__about {
       width: 100%;
       text-align: center;
       padding: 20px;

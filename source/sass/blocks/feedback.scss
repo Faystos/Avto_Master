@@ -34,12 +34,13 @@
 
   .feedback__block_input {
     input,
-    textarea {
+    textarea#description {
       font-family: $main-font;
       background-color: transparent;
       width: 510px;
       height: 47px;
       border: 1px solid #ffffff;
+      color: #ffffff;
       border-radius: 5px;
       margin-bottom: 15px;
       padding: 10px 18px;
@@ -51,7 +52,7 @@
       }
     }
 
-    textarea {
+    textarea#description {
       height: 110px;
       margin-bottom: 12px
     }
