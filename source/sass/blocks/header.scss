@@ -28,7 +28,8 @@
   }
 
   .header__address,
-  .header__phone {
+  .header__phone,
+  .header__email {
     display: flex;
     align-items: center;
 
@@ -78,7 +79,8 @@
     }
 
     .header__address,
-    .header__phone {
+    .header__phone,
+    .header__email {
       p {
         display: none;
       }
@@ -108,7 +110,8 @@
     }
 
     .header__address,
-    .header__phone {
+    .header__phone,
+    .header__email {
       margin-left: 15px;
 
       svg {

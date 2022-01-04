@@ -13,8 +13,7 @@
   }
 
   .footer__phone,
-  .footer__schedule,
-  .footer__about {
+  .footer__schedule {
     width: 50%;
     font-size: 20px;
     padding: 20px 20px 20px 170px;
@@ -38,8 +37,7 @@
 
   @media (max-width: $desktop-width) {
     .footer__phone,
-    .footer__schedule,
-    .footer__about {
+    .footer__schedule {
       padding-left: 120px;
     }
   }
@@ -51,8 +49,7 @@
     }
 
     .footer__phone,
-    .footer__schedule,
-    .footer__about {
+    .footer__schedule {
       width: 100%;
       text-align: center;
       padding: 20px;

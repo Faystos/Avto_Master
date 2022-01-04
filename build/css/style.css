@@ -203,7 +203,8 @@ a {
     display: -ms-flexbox;
     display: flex; }
   .header .header__address,
-  .header .header__phone {
+  .header .header__phone,
+  .header .header__email {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -211,11 +212,13 @@ a {
         -ms-flex-align: center;
             align-items: center; }
     .header .header__address svg,
-    .header .header__phone svg {
+    .header .header__phone svg,
+    .header .header__email svg {
       fill: #6610f2;
       margin-right: 15px; }
     .header .header__address a,
-    .header .header__phone a {
+    .header .header__phone a,
+    .header .header__email a {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -223,11 +226,13 @@ a {
       font-size: 16px;
       margin-left: 25px; }
     .header .header__address span,
-    .header .header__phone span {
+    .header .header__phone span,
+    .header .header__email span {
       display: block;
       height: 17px; }
     .header .header__address span:last-of-type,
-    .header .header__phone span:last-of-type {
+    .header .header__phone span:last-of-type,
+    .header .header__email span:last-of-type {
       font-family: "Roboto", "Aria", sans-serif;
       font-size: 16px;
       color: #6c757d;
@@ -244,7 +249,8 @@ a {
         font-size: 16px;
         margin-top: 5px; }
       .header .header__address p,
-      .header .header__phone p {
+      .header .header__phone p,
+      .header .header__email p {
         display: none; } }
   @media (max-width: 767px) {
     .header {
@@ -261,15 +267,18 @@ a {
       .header .header__logo_link p {
         display: none; }
       .header .header__address,
-      .header .header__phone {
+      .header .header__phone,
+      .header .header__email {
         margin-left: 15px; }
         .header .header__address svg,
-        .header .header__phone svg {
+        .header .header__phone svg,
+        .header .header__email svg {
           width: 30px;
           height: 30px;
           margin: 0; }
         .header .header__address a,
-        .header .header__phone a {
+        .header .header__phone a,
+        .header .header__email a {
           margin: 0; } }
 
 .description {
@@ -621,15 +630,19 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
-  .location .location__title {
+  .location .location__title,
+  .location .location__map {
     margin-bottom: 30px; }
-    .location .location__title h3 {
+    .location .location__title h3,
+    .location .location__map h3 {
       font-family: "Roboto Condensed", "Aria", sans-serif;
       font-size: 27px;
       margin-bottom: 20px; }
-    .location .location__title p {
+    .location .location__title p,
+    .location .location__map p {
       font-family: "Roboto Condensed Light", "Arial", sans-serif;
-      font-size: 18px; }
+      font-size: 18px;
+      margin-bottom: 3px; }
   .location .location__map {
     margin-bottom: 30px; }
   .location .location__block_img {
@@ -856,22 +869,18 @@ a {
         -ms-flex-pack: center;
             justify-content: center; }
   .footer .footer__phone,
-  .footer .footer__schedule,
-  .footer .footer__about {
+  .footer .footer__schedule {
     width: 50%;
     font-size: 20px;
     padding: 20px 20px 20px 170px; }
     .footer .footer__phone h3,
-    .footer .footer__schedule h3,
-    .footer .footer__about h3 {
+    .footer .footer__schedule h3 {
       font-family: "Roboto Condensed", "Aria", sans-serif;
       margin-bottom: 10px; }
     .footer .footer__phone a,
     .footer .footer__phone p,
     .footer .footer__schedule a,
-    .footer .footer__schedule p,
-    .footer .footer__about a,
-    .footer .footer__about p {
+    .footer .footer__schedule p {
       font-family: "Roboto", "Aria", sans-serif;
       margin-bottom: 5px; }
   .footer .footer__block_phone {
@@ -884,8 +893,7 @@ a {
             flex-direction: column; }
   @media (max-width: 1199px) {
     .footer .footer__phone,
-    .footer .footer__schedule,
-    .footer .footer__about {
+    .footer .footer__schedule {
       padding-left: 120px; } }
   @media (max-width: 767px) {
     .footer .footer__wrap {
@@ -897,8 +905,7 @@ a {
           -ms-flex-align: center;
               align-items: center; }
     .footer .footer__phone,
-    .footer .footer__schedule,
-    .footer .footer__about {
+    .footer .footer__schedule {
       width: 100%;
       text-align: center;
       padding: 20px; } }

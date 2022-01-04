@@ -9,7 +9,8 @@
     flex-direction: column;
   }
 
-  .location__title {
+  .location__title,
+  .location__map {
     margin-bottom: 30px;
 
     h3 {
@@ -21,6 +22,7 @@
     p {
       font-family: $main-font-Light;
       font-size: 18px;
+      margin-bottom: 3px;
     }
   }
 
